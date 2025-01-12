@@ -1,4 +1,9 @@
 body{
     margin: 0;
     overflow: hidden;
+    cursor: url('img/lul.png'), auto;
+}
+
+#container{
+    display: none;
 }

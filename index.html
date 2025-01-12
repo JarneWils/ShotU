@@ -4,10 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
 </head>
 <body>
+
+    <div class="justify-center fixed text-white text-xl ml-4 mt-2 select-none">
+        <span>Score:</span>
+        <span id="scoreEl">0</span>
+        <br>
+        <span>Shots left:</span>
+        <span id="shots-left">1000</span>
+    </div>
+
+
+    <div id="container" class="fixed inset-0 flex items-center justify-center">
+        <div class="bg-white w-1/2 rounded-xl p-3 text-center font-medium text-xl">
+          <div class="m-2">GIJ ZIJT GESTORVEN</div>
+          <div class="text-gray-500 m-2"><p>score: <span id="finalScoreEl">0</span></p></div>
+          <div>
+            <button id="restart" class="text-white bg-blue-500 p-2 m-2 rounded-xl">RESTART</button>
+          </div>
+        </div>
+    </div>
+      
+
     <canvas></canvas>
+
     <script src="index.js"></script>
 </body>
 </html>
